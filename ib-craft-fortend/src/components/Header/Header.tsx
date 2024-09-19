@@ -12,16 +12,16 @@ function Header() {
                             <img src={logo} className={style.header__logo} alt="logo" />
                         </Link>
                     </div>
-                    <nav className={style.havbar}>
+                    <nav className={style.navbar}>
                         <ul className={style.navbar_items}>
                             <li className={style.list_nav}>
-                                <a href="#!" className={style.nav_btn}>Карта</a>
+                                <a href="#!" className={style.nav_btn}>Карта<span id={style.map_ico}></span></a>
                             </li>
                             <li className={style.list_nav}>
-                                <a href="#!" className={style.nav_btn}>Правила</a>
+                                <a href="#!" className={style.nav_btn}>Правила<span id={style.rules_ico}></span></a>
                             </li>
                             <li className={style.list_nav}>
-                                <a href="#!" className={style.nav_btn}>Наш вк</a>
+                                <a href="#!" className={style.nav_btn}>Наш BK<span id={style.vk_ico}></span></a>
                             </li>
                         </ul>
                     </nav>

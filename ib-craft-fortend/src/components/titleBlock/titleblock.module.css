@@ -1,0 +1,12 @@
+.main_title {
+    display: block;
+    position: relative;
+}
+
+.title_block{
+    position: absolute;
+    display: flex;
+    background-color: #13061E;
+    max-width: 1920px;
+    height: 400px;
+}

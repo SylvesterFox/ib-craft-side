@@ -1,0 +1,83 @@
+.main {
+    margin: 90px 0px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.discription_block{
+    align-items: center;
+    width: 682px;
+    height: 280px;
+    background-color: #13061E;
+    border-radius: 45px;
+    border-right: 14px solid rgba(56, 27, 80, 0.55);
+    border-bottom: 14px solid rgba(56, 27, 80, 0.55);
+}
+
+.discription_context {
+    font-size: 42px;
+    font-weight: bold;
+    padding: 25px 10px;
+    line-height: 47px;
+}
+
+.discription_context span {
+    color: #FFB5FA;
+}
+
+.options_block{
+    display: block;
+    margin-top: 80px;
+}
+
+.ip_server_context{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.option_button_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.main_btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--textcolor);
+    background-color: var(--buttonscolor);
+    width: 360px;
+    padding: 15px 0px;
+    border-radius: 45px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.main_btn:hover {
+    background-color: var(--buttonhovercolor);
+}
+
+.main_btn span {
+    position: relative;
+    margin-left: 10px;
+}
+
+#user_ico {
+    content: url(../../static/user_ico.svg);
+    width: 24px;
+    height: 21px;
+}
+
+#download_ico {
+    content: url(../../static/download_ico.svg);
+    width: 24px;
+    height: 21px;
+}

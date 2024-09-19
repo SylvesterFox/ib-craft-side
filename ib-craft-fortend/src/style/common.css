@@ -1,5 +1,30 @@
+@font-face { 
+    font-family: "Oxygen";
+    src: url("../fonts/OxygenRegular.eot");
+    src: url("../fonts/OxygenRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OxygenRegular.woff") format("woff"),
+    url("../fonts/OxygenRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+:root {
+    --textcolor: #fff;
+    --buttonscolor: #8700FF;
+    --buttonhovercolor: #5900A9;
+    
+}
+
+body {
+    background: linear-gradient(162deg, rgba(151, 71, 255, 0.20) 0%, rgba(33, 11, 52, 0.20) 49.72%, rgba(135, 0, 255, 0.20) 98.15%), #210B34;
+    background-attachment: fixed;
+    color: var(--textcolor);
+    font-family: "Oxygen", system-ui;
+}
+
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0 318px;
+    padding: 0 120px;
+    font-family: "Oxygen", system-ui;
 }

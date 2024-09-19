@@ -1,3 +1,4 @@
+
 .header{
     background-color: #13061e;
     max-width: 1920px;
@@ -6,11 +7,83 @@
 }
 
 .header__row {
+    display: flex;
+    position: relative;
     padding: 30px 0;
+    justify-content: space-between ;
+    flex-direction: row;
 }
 
 .header__logo {
     position: absolute;
     width: 318px;
     height: 69px;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-5px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+.navbar {
+    position: relative;
+    display: flex;
+}
+
+.navbar_items {
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list_nav .nav_btn {
+    position: relative;
+    margin-left: 10px;
+    background-color: var(--buttonscolor);
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 26px;
+    border-radius: 29px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav_btn span{
+    position: relative;
+    margin-left: 10px;
+}
+
+.nav_btn:hover {
+    background-color: var(--buttonhovercolor)
+}
+
+#map_ico {
+    content: url(../../static/map.svg);
+    width: 24px;
+    height: 21px;
+    top: 2px;
+}
+
+#rules_ico {
+    content: url(../../static/rules.svg);
+    width: 24px;
+    height: 21px;
+    top: 4px;
+}
+
+#vk_ico {
+    content: url(../../static/vk.svg);
+    width: 24px;
+    height: 21px;
+    top: 4px;
 }
