@@ -1,3 +1,4 @@
+import QuestionsBlock from '../questionsBlock/QuestionsBlock';
 import style from './cardblock.module.css'
 
 function CardBlock() {
@@ -50,6 +51,7 @@ function CardBlock() {
                 </div>
             </div>
         </div>
+        
     )
 }
 

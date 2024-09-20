@@ -8,12 +8,33 @@
     font-weight: 400;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --textcolor: #fff;
     --buttonscolor: #8700FF;
     --buttonhovercolor: #5900A9;
-    
+    --elementcolor: #13061E;
+    --openelementcolor: #190826;
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: var(--elementcolor);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, var(--buttonscolor), var(--openelementcolor));
+  }
+  
 
 body {
     background: linear-gradient(162deg, rgba(151, 71, 255, 0.20) 0%, rgba(33, 11, 52, 0.20) 49.72%, rgba(135, 0, 255, 0.20) 98.15%), #210B34;

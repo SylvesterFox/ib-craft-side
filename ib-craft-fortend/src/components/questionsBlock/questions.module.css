@@ -1,0 +1,73 @@
+.questions_block {
+    min-height: 100vh;
+    margin-top: 120px;
+}
+
+.qa_title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.questions_grid {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.question {
+    min-height: 1em;
+    max-height: 170px;
+    background-color: var(--elementcolor);
+    padding: 18px 20px;
+    border-radius: 29px;
+    cursor: pointer;
+}
+
+
+
+.question summary {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.res_block {
+    margin-top: 20px;
+}
+
+.question summary::after {
+    border-radius: 5px;
+    content: url("../../static/croos_down.svg");
+    color: #fff;
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: -5px 10px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+}
+
+.question[open] {
+    background-color: var(--openelementcolor);
+    border: solid 5px var(--elementcolor );
+}
+
+.question[open] summary::after {
+    content: url(../../static/croos_up.svg);
+}
+
+.question[open] div {
+    animation: spoiler 1s;
+}
+
+@keyframes spoiler {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }

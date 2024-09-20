@@ -1,0 +1,35 @@
+.footer {
+    height: 80px;
+    margin-top: 50px;
+    background-color: var(--elementcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.ico_socal{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.copyright {
+    padding-top: 10px;
+}
+
+#vk {
+    content: url(../../static/vk_footer.svg);
+    width: 40px;
+    height: 40px;
+}
+
+#discord {
+    content: url(../../static/discord.svg);
+    width: 40px;
+    height: 40px;
+}
