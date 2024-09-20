@@ -20,6 +20,7 @@ body {
     background-attachment: fixed;
     color: var(--textcolor);
     font-family: "Oxygen", system-ui;
+    overflow-x: hidden;
 }
 
 .container {

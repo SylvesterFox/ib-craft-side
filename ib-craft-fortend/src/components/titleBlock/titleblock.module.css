@@ -1,12 +1,41 @@
-.main_title {
-    display: block;
-    position: relative;
-}
+
 
 .title_block{
-    position: absolute;
     display: flex;
     background-color: #13061E;
     max-width: 1920px;
-    height: 400px;
+    height: 621px;
+    justify-content: center;
+    align-items: center;
 }
+
+.block_context_title {
+    position: relative;
+    text-align: center;
+    font-size: 19px;
+    line-height: 62px;
+    z-index: 10;
+    
+}
+
+.title_context {
+    width: 1020px;
+    height: 390px;
+}
+
+.admins_model_skins {
+    display: flex;
+    position: absolute;
+    gap: 365px;
+}
+
+.model_skin_svg {
+    width: 500px;
+    height: 500px;
+}
+
+#andery {
+    margin-bottom: 50px;
+}
+
+

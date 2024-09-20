@@ -1,3 +1,62 @@
-.card_block {
-    height: 450vh;
+.card_blocks {
+    margin-top: 170px;
+    height: 100vh;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+}
+
+.card {
+    width: 290px;
+    height: 470px;
+    background-color: #13061E;
+    border-radius: 45px;
+}
+
+.title_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 18px;
+}
+
+.context_list {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.context_list li {
+    margin-top: 10px;
+}
+
+.context_card {
+    font-size: 22px;
+    padding: 10px 20px;
+    line-height: 30px;
+}
+
+.card_ico {
+    width: 55px;
+    height: 55px;
+}
+
+#gamepad_ico {
+    content: url(../../static/gamepad.svg);
+}
+
+#pc_ico {
+    content: url(../../static/pc.svg);
+}
+
+#server_ico {
+    content: url(../../static/server.svg);
 }
