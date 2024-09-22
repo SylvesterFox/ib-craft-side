@@ -1,11 +1,13 @@
 .card_blocks {
     margin-top: 170px;
+    display: flex;
+    justify-content: center;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 60px;
+    grid-template-columns: 290px 290px 290px;
+    column-gap: 90px;
 }
 
 .card {
