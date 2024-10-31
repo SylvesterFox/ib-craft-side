@@ -19,7 +19,9 @@ function Header() {
                                  <img src={logo} className={style.header__logo} alt="logo" />
                              </Link>
                          </div>
-                         <div className={`${style.burger_menu}`} onClick={toggleMenu}>
+                         <div className={`${style.burger_menu} ${isOpen ? style.active : ""}`} onClick={toggleMenu}>
+                             <span />
+                             <span />
                              <span />
                          </div>
                          <nav className={`${style.navbar} ${isOpen ? style.open : ""}`}>

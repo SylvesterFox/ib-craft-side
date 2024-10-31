@@ -61,3 +61,12 @@
 #server_ico {
     content: url(../../static/server.svg);
 }
+
+@media (max-width: 1290px) {
+    .cards {
+        grid-template-rows: 290px 290px 290px;
+        grid-template-columns:none;
+
+        row-gap: 250px;
+    }
+}

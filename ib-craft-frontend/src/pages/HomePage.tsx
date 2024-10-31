@@ -9,12 +9,14 @@ function HomePage() {
     return(
         <>
             <Header/>
-            
-            
-            {/* 
             <MainBlock/>
             <TitleBlock/>
             <CardBlock/>
+            
+            {/* 
+            
+            
+            
             <QuestionsBlock/>
             <Footer/> */}
         </>
