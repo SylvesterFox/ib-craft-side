@@ -1,6 +1,9 @@
+import { useEffect, useState } from "react";
 import style from "./questions.module.css"
 
 function QuestionsBlock () {
+
+
     return (
         <div className={style.questions_block}>
             <div className="container">

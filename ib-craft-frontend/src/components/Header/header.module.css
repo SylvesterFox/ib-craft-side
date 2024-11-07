@@ -120,7 +120,7 @@
 
 
     .navbar {
-        opacity: 0;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -133,7 +133,7 @@
     }
 
     .navbar.open{
-        opacity: 1;
+        display: flex;
     }
 
     .navbar_items {

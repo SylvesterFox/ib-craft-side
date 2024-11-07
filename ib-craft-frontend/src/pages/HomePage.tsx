@@ -12,12 +12,13 @@ function HomePage() {
             <MainBlock/>
             <TitleBlock/>
             <CardBlock/>
+            <QuestionsBlock/>
             
             {/* 
             
             
             
-            <QuestionsBlock/>
+            
             <Footer/> */}
         </>
     )
