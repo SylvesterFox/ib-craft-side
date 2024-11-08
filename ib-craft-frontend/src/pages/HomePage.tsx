@@ -13,13 +13,9 @@ function HomePage() {
             <TitleBlock/>
             <CardBlock/>
             <QuestionsBlock/>
-            
-            {/* 
-            
+            <Footer/>
             
             
-            
-            <Footer/> */}
         </>
     )
 }

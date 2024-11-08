@@ -86,8 +86,10 @@
 }
 
 /* временный */
-.login {
-    height: 22px;
+#login {
+    content: url(../../static/alt-key-svgrepo-com.svg);
+    width: 21px;
+    height: 21px;
 }
 
 #map_ico {
@@ -112,20 +114,47 @@
     display: none;
 }
 
+.blur {
+    display: none;
+}
+
 @media (max-width: 1055px) {
+    .header {
+        min-width: 100%;
+        position: fixed;
+    }
+
     .header::before {
         height: 90px;
         z-index: 4;
+        
     }
 
+    .blur{
+        display: block;
+        position: fixed;
+        top: -100%;
+        right: 0;
+        left: 0;
+        max-width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: 2;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .blur_active {
+        top: 0;
+        opacity: 0.5;
+    }
 
     .navbar {
-        display: none;
+        top: -100%;
         position: fixed;
-        top: 0;
-        left: 0;
+        right: 0;
         width: 100%;
-        height: 100%;
+        height: 41%;
         background-color: var(--elementcolor);
         padding: 95px 0 0 0;
         transition: 0.3s;
@@ -133,7 +162,7 @@
     }
 
     .navbar.open{
-        display: flex;
+        top: 0;
     }
 
     .navbar_items {

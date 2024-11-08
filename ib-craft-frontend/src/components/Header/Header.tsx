@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import logo from "../../static/logo.svg"
 import style from "./header.module.css"
 
@@ -9,8 +9,21 @@ function Header() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isOpen])
     return (
-        <header className={style.header}>
+        <header className={`${style.header} ${style.fixed}`}>
+            <canvas className={`${style.blur} ${isOpen ? style.blur_active : ""}`} onClick={toggleMenu}></canvas>
              <div className="container">
                      <div className={style.header__row}>
                       
@@ -47,7 +60,7 @@ function Header() {
                                  <li className={style.list_nav}>
                                      <a href="#!" className={style.nav_btn}>
                                          <p className={style.login}>Вход</p>
-                                         {/* <span id={style} className={style.btn_ico}></span> */}
+                                         <span id={style.login} className={style.btn_ico}></span>
                                      </a>
                                  </li>
                              </ul>
