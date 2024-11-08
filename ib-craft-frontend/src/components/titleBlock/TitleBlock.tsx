@@ -6,25 +6,25 @@ function TitleBlock () {
     return (
         <div className={style.main_title}>
             <div className={style.title_block}>
-                <div className="container">
+                
+                <div className={style.text_container}>
+                    <span className={`${style.character} ${style.creator}`}>
+                            <img src={ilyaskin} alt="andery"/>
+                    </span>
                    <div className={style.block_context_title}>
-                        <p className={style.title_context}>
-                            Вы устали от игры на серверах с модами или от игры на серверах, созданных только для<br/> доната? Хочется спокойно <br/> 
-                            поиграть в ванильный Minecraft без лишней суеты с небольшим количеством РП в <br/> мультиплеере? Тогда мы рады вам <br/> 
-                            представить наш сервер на версии 1.20.1 - IB-Craft!
+                        <p className={style.text}>
+                            Вы устали от игры на серверах с модами или от игры на серверах,
+                            созданных только для доната? Хочется спокойно поиграть в ванильный
+                            Minecraft без лишней суеты с небольшим количеством РП в мультиплеере?
+                            Тогда мы рады вам представить наш сервер на версии 1.20.1 - IB-Craft!
                         </p>
-                   </div>
-                </div>
-                <div className={style.admins_model_skins}>
-                    <div className={style.moderator_skin_model}>
-                        <img src={ilyaskin} alt="andery" className={style.model_skin_svg} id={style.andery} />
                     </div>
-                    <div className={style.moderator_skin_model}>
-                        <img src={moderator_skin} alt="ilyabot" className={style.model_skin_svg} />
-                    </div>
+                    <span className={`${style.character} ${style.moderator}`}>
+                        <img src={moderator_skin} alt="ilyabot"/>
+                    </span>
                 </div>
+                
             </div>
-            
         </div>
     ) 
 }

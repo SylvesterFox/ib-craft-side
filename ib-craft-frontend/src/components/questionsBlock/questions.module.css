@@ -19,14 +19,17 @@
 }
 
 .question {
-    min-height: 1em;
-    max-height: 170px;
+    max-height: 100vh;
     background-color: var(--elementcolor);
     padding: 18px 20px;
     border-radius: 29px;
     cursor: pointer;
+    touch-action:auto;
 }
 
+summary::-webkit-details-marker {
+    display:none;
+ }
 
 
 .question summary {

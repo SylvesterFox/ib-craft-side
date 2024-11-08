@@ -1,5 +1,6 @@
 .main {
-    margin: 90px 0px;
+    margin: 140px 0px;
+    padding: 150px 0 150px 0;
 }
 
 .wrapper {
@@ -7,13 +8,13 @@
     flex-direction: row;
     gap: 40px;
     justify-content: center;
-
+    align-items: center;
 }
 
 .discription_block{
     align-items: center;
-    width: 682px;
-    height: 280px;
+    max-width: 682px;
+    max-height: 280px;
     background-color: #13061E;
     border-radius: 45px;
     border-right: 14px solid rgba(56, 27, 80, 0.55);
@@ -55,13 +56,15 @@
     text-decoration: none;
     color: var(--textcolor);
     background-color: var(--buttonscolor);
-    width: 360px;
-    padding: 15px 0px;
+    max-width: 360px;
+    padding: 15px 60px;
     border-radius: 45px;
     font-weight: bold;
     font-size: 18px;
     transition: 0.3s;
 }
+
+
 
 .main_btn:hover {
     background-color: var(--buttonhovercolor);
@@ -82,4 +85,26 @@
     content: url(../../static/download_ico.svg);
     width: 24px;
     height: 21px;
+}
+
+
+@media (max-width: 1095px) {
+    .main {
+        height: 500px;
+        padding: 10px 0 10px 0;
+        margin: 120px 0px;
+    }
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .options_block {
+        margin: 10px 0 0 0;
+    }
+
+    .discription_context{
+        font-size: 26px;
+        line-height: 30px;
+    }
 }

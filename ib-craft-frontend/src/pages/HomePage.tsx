@@ -14,6 +14,8 @@ function HomePage() {
             <CardBlock/>
             <QuestionsBlock/>
             <Footer/>
+            
+            
         </>
     )
 }

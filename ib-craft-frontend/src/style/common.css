@@ -50,3 +50,10 @@ body {
     padding: 0 120px;
     font-family: "Oxygen", system-ui;
 }
+
+@media (max-width: 1055px) {
+    .container {
+        padding: 0 3vh;
+    }
+    
+}
