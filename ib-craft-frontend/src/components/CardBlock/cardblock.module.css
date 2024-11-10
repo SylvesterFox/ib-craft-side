@@ -63,11 +63,29 @@
     content: url(../../static/server.svg);
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1060px) {
+  .cards {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 965px) {
     .cards {
         grid-template-rows: 290px 290px 400px;
         grid-template-columns:none;
 
         row-gap: 250px;
+    }
+}
+
+@media (max-height: 540px) {
+    .cards {
+        position: relative;
+    }
+}
+
+@media (max-height: 344px) {
+    .card_blocks{
+        max-height: 400vh;
     }
 }

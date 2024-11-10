@@ -40,6 +40,8 @@
 .ip_server_context{
     font-size: 38px;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .option_button_items{
@@ -64,10 +66,49 @@
     transition: 0.3s;
 }
 
+.clipboard {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    background-color: #8700ff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+    z-index: 5;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_title {
+    display: flex;
+    justify-content: center;
+}
+
+.clip {
+    position: fixed;
+    display: flex;
+    top: -150px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    justify-content: center;
+    transition: 0.3s;
+    
+}
+
+.active_clip {
+    top: 150px;
+}
 
 
 .main_btn:hover {
     background-color: var(--buttonhovercolor);
+}
+
+.ip_server_context:hover {
+    color: #FFB5FA;
 }
 
 .main_btn span {

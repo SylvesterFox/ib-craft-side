@@ -21,6 +21,7 @@ function Header() {
             document.body.style.overflow = '';
         };
     }, [isOpen])
+
     return (
         <header className={`${style.header} ${style.fixed}`}>
             <canvas className={`${style.blur} ${isOpen ? style.blur_active : ""}`} onClick={toggleMenu}></canvas>
@@ -40,7 +41,7 @@ function Header() {
                          <nav className={`${style.navbar} ${isOpen ? style.open : ""}`}>
                              <ul className={style.navbar_items}>
                                  <li className={style.list_nav}>
-                                     <a href="#!" className={style.nav_btn}>
+                                     <a href="https://map.ibcraft.ru/" className={style.nav_btn}>
                                          <p>Карта</p>
                                          <span id={style.map_ico} className={style.btn_ico}></span>
                                      </a>
@@ -52,7 +53,7 @@ function Header() {
                                      </a>
                                  </li>
                                  <li className={style.list_nav}>
-                                     <a href="#!" className={style.nav_btn}>
+                                     <a href="https://vk.com/ibcraft" className={style.nav_btn}>
                                          <p>Наш BK</p>
                                          <span id={style.vk_ico} className={style.btn_ico}></span>
                                      </a>

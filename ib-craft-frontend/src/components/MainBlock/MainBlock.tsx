@@ -1,9 +1,36 @@
+import { useState } from "react";
 import style from "./mainblock.module.css";
 
 function MainBlock() {
+    const [copySuccess, setCopySuccess] = useState(false);
+
+    const textIp = 'mc.ibcraft.ru';
+
+    const hadleCopyClick = () => {
+        navigator.clipboard.writeText(textIp)
+            .then(() => {
+                console.log("Text copied to clipboard!");
+                setCopySuccess(true);
+                setTimeout(() => setCopySuccess(false), 2000);
+            })
+            .catch((error) => {
+                console.error('Error copying text: ', error);
+            });
+    };
+
     return (
+        
         <div className={style.main}>
             <div className="container">
+                <div className={`${style.clip}  ${copySuccess ? style.active_clip : ""}`}>
+                    <div className={`${style.clipboard}`}>
+                            <div className={style.text_title}>
+                                ✅ Скопировано!
+                            </div>
+                    </div>
+                </div>
+                    
+
                 <div className={style.wrapper}>
                     <div className={style.discription_block}>
                         <p className={style.discription_context}>
@@ -12,7 +39,7 @@ function MainBlock() {
                         </p>
                     </div>
                     <div className={style.options_block}>
-                        <p className={style.ip_server_context}>IP: mc.ibcraft.ru</p>
+                        <p className={style.ip_server_context} onClick={hadleCopyClick}>IP: {textIp}</p>
                         <ul className={style.option_button_items}>
                             <li className={style.item_main_btn}>
                                 <a href="#!" className={style.main_btn}>Получить проходку<span id={style.user_ico}></span></a>

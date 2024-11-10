@@ -1,5 +1,6 @@
 .questions_block {
-    min-height: 100vh;
+    position: relative;
+    max-height: 300vh;
     margin-top: 120px;
 }
 
@@ -74,3 +75,27 @@ summary::-webkit-details-marker {
     0%   {opacity: 0;}
     100% {opacity: 1;}
   }
+
+
+ @media (max-height: 541px) {
+    .questions_block {
+        margin-top: 300px;
+    }
+    
+ }
+
+ @media (max-width: 320px) {
+    .questions_block {
+        margin-top: 450px;
+        
+    }
+
+    .question {
+        font-size: 11px;
+    }
+
+    .qa_title {
+        font-size: 20px;
+    }
+    
+ }
