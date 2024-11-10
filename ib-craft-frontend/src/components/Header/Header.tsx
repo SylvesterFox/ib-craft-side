@@ -47,10 +47,10 @@ function Header() {
                                      </a>
                                  </li>
                                  <li className={style.list_nav}>
-                                     <a href="#!" className={style.nav_btn}>
+                                     <Link to="/rule" className={style.nav_btn}>
                                          <p>Правила</p>
                                          <span id={style.rules_ico} className={style.btn_ico}></span>
-                                     </a>
+                                     </Link>
                                  </li>
                                  <li className={style.list_nav}>
                                      <a href="https://vk.com/ibcraft" className={style.nav_btn}>
@@ -59,10 +59,10 @@ function Header() {
                                      </a>
                                  </li>
                                  <li className={style.list_nav}>
-                                     <a href="#!" className={style.nav_btn}>
-                                         <p className={style.login}>Вход</p>
+                                     <Link to="/auth" className={style.nav_btn}>
+                                         <p className={style.login}>Авторизация</p>
                                          <span id={style.login} className={style.btn_ico}></span>
-                                     </a>
+                                     </Link>
                                  </li>
                              </ul>
                          </nav>

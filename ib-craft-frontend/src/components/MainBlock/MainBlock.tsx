@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from "./mainblock.module.css";
+import BubbleBackground from "../EffectComponents/BubbleContainer";
 
 function MainBlock() {
     const [copySuccess, setCopySuccess] = useState(false);
@@ -21,12 +22,13 @@ function MainBlock() {
     return (
         
         <div className={style.main}>
+            <BubbleBackground />
             <div className="container">
                 <div className={`${style.clip}  ${copySuccess ? style.active_clip : ""}`}>
                     <div className={`${style.clipboard}`}>
-                            <div className={style.text_title}>
-                                ✅ Скопировано!
-                            </div>
+                        <div className={style.text_title}>
+                            ✅ Скопировано!
+                        </div>
                     </div>
                 </div>
                     

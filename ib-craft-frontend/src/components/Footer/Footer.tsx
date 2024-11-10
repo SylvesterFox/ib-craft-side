@@ -10,7 +10,7 @@ function Footer () {
                         <span>
                             <a href="https://vk.com/ibcraft" id={style.vk} className={style.ico_socal}></a>
                         </span>
-                        <span >
+                        <span>
                             <a href="https://discord.gg/M2BWpZJRqG" id={style.discord} className={style.ico_socal}></a>
                         </span>
                     </div>

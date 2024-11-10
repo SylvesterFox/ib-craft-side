@@ -1,0 +1,93 @@
+.main_auth{
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+.blockauth {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--elementcolor);
+    margin-top: 30px;
+    width: 100vh;
+    height: 70vh;
+    border-radius: 40px;
+    gap: 10px;
+    margin-top: 42px;
+}
+
+.title_auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.lock_img {
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.auth_discord {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--buttonscolor);
+    padding: 16px 40px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 30px;
+    gap: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.support_btn {
+    position: relative;
+    text-align: center;
+    color: #5a5656;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.support_btn:hover {
+    background-color: #fffafa;
+}
+
+.auth_discord:hover {
+    background-color: var(--buttonhovercolor);
+}
+
+#discord {
+    position: relative;
+    top: 1px;
+    content: url(../../static/discord_min.svg);
+    max-width: 23px;
+    max-height: 23px;
+}
+
+@media (max-width: 1055px) {
+
+    .main_auth {
+        margin-top: 99px;
+    }
+}
